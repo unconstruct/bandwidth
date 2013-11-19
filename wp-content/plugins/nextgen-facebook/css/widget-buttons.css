@@ -1,0 +1,14 @@
+/* save an empty style text box to reload the defaults */
+
+/* align vertically in a 160px wide column */
+.ngfb-widget-buttons { 
+	text-align:left; 
+}
+.ngfb-widget-buttons .ngfb-buttons { 
+	margin:0;
+}
+.ngfb-widget-buttons .ngfb-buttons > div { 
+	display:block;
+	margin:0 0 3px 0;
+	width:160px; 
+}

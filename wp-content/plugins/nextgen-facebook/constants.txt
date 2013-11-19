@@ -1,0 +1,133 @@
+
+PHP Constants for NextGEN Facebook Open Graph
+
+To address very specific needs, some PHP constants for NGFB may be defined in
+your wp-config.php or template files (generally before the wp_head() function
+call). 
+
+NGFB_DEBUG
+
+	Set this constant to 'true' to turn on hidden debug messages, and use
+	"View Source" on any webpage to view the debug messages. An
+	informational message box will also be displayed in admin pages as
+	reminder that debug mode is on.
+
+NGFB_DEBUG_OBJ_EXP
+
+	Cache object expiration time in seconds when debug mode is enabled
+	(defaults is 3 seconds).
+
+NGFB_DEBUG_FILE_EXP
+
+	Cache file expiration time in seconds when debug mode is enabled
+	(defaults is 5 seconds).
+
+NGFB_WP_DEBUG
+
+	Send debug messages to PHP's error_log() as well.
+
+NGFB_RESET
+
+	Set this contant to 'true' to reset all options to their defaults when
+	the plugin is activated.
+
+NGFB_OPEN_GRAPH_DISABLE
+
+	Set this contant to 'true' to prevent the plugin from adding Open
+	Graph meta tags in the webpage head section. See "Disable Open Graph
+	Meta Tags" above for an example of it's use.
+
+NGFB_MIN_IMG_SIZE_DISABLE
+
+	Set this contant to 'true' to disable the minimum width and height
+	checks for the <img/> attributes in the content. All images, no matter
+	their size, will be added to the Open Graph meta tags. See "Why does
+	NGFB ignore the <img/> HTML tags in my content?" on the FAQ page
+	for additional information.
+
+NGFB_OPTIONS_NAME
+
+	The options field name in the database for NGFB. The default value is
+	'ngfb_options'.
+
+NGFB_MENU_PRIORITY
+
+	Adjust the location of the "Open Graph" menu. The default value is
+	"99.10".
+
+NGFB_HEAD_PRIORITY
+
+	Change the execution priority of the method that adds JavaScript and
+	Open Graph meta tags to the head section. The default value is 5.
+
+NGFB_SOCIAL_PRIORITY
+
+	Change the execution priority for the method that adds social buttons
+	to the content. The default value is 100.
+
+NGFB_FOOTER_PRIORITY
+
+	Change the execution priority for the method that adds JavaScript to
+	the footer section. The default value is 10.
+
+NGFB_MIN_DESC_LEN
+
+	The minimum allowed description length value. The default is 160. A
+	maximum description length value is configurable on the settings page,
+	but any value entered bellow NGFB_MIN_DESC_LEN will be changed to
+	NGFB_MIN_DESC_LEN when saved.
+
+NGFB_MIN_IMG_SIZE
+
+	The minimum image width and height suggested on the settings page. The
+	default value is 200.
+
+NGFB_MAX_IMG_OG
+
+	The maximum range shown in the "Maximum Number of Images" drop-down on
+	the settings page. The default value is 20.
+
+NGFB_MAX_VID_OG
+
+	The maximum range shown in the "Maximum Number of Videos" drop-down on
+	the settings page. The default value is 20.
+
+NGFB_MAX_CACHE_HRS
+
+	The maximum range shown in the "Cache Expiry in Hours" drop-down on
+	the settings page. The default value is 24.
+
+NGFB_CONTACT_FIELDS
+
+	The field names and labels for the additional user profile fields. The
+	default value is "facebook:Facebook URL,gplus:Google+ URL". See the
+	"Rename or Add Profile URL Fields" section in the readme for
+	additional information.
+
+NGFB_CURL_DISABLE
+
+	Disable all use of PHP's curl functions (all NGFB file caching
+	features will be disabled).
+
+NGFB_CURL_USERAGENT
+
+	Used by the remote content caching feature for social button images
+	and JavaScript. The Google+ JavaScript is different for (what Google
+	considers) invalid user agents. Since crawlers and robots might
+	refresh the cached files, the NGFB_CURL_USERAGENT defines a default
+	user agent string. You may define a NGFB_CURL_USERAGENT constant in
+	your wp-config.php file to change the default NGFB uses.
+
+NGFB_CURL_CAINFO
+
+	When the "Verify SSL Certificates" option is checked, PHP's curl
+	function needs a certificate authority file. Define the
+	NGFB_CURL_CAINFO constant in your wp-config.php file to change the
+	default location used by NGFB.
+
+NGFB_WISTIA_API_PWD
+
+	In order to share embedded videos from Wistia, you must define your
+	Wistia API password (see the Account Dashboard -> API Settings on
+	Wistia).
+

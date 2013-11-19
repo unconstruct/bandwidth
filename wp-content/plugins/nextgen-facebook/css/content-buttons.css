@@ -1,0 +1,19 @@
+/* save an empty style text box to reload the defaults */
+
+.ngfb-content-buttons { 
+	display:block;
+
+	/* center the buttons with a 15px margin top/bottom */
+	margin:15px auto 15px auto;
+
+	/* un-comment to created a shadowed box for the buttons */
+	/*
+		padding:2px;
+		text-align:center;
+		background-color:#eee;
+		-moz-box-shadow:0 0 5px #aaa;
+		-webkit-box-shadow:0 0 5px #aaa;
+		box-shadow:0 0 5px #aaa;
+		border-radius:3px;
+	*/
+}
